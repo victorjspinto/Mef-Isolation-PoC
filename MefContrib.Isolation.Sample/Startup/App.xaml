@@ -1,0 +1,14 @@
+﻿<Application x:Class="MefContrib.Isolation.Samples.Startup.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:Samples="clr-namespace:MefContrib.Isolation.Samples.Startup">
+	<Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <Samples:AppBootstrapper x:Key="bootstrapper" />
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+	</Application.Resources>
+</Application>
